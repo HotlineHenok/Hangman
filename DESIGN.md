@@ -11,4 +11,4 @@ The sketches for the Hangman app are shown below
 ![sketch5](https://github.com/HotlineHenok/Hangman/blob/master/sketches%20design/IMG_20151113_225123.jpg?raw=true)
 
 The UML diagram for the Hangman app is shown below
-![diagram](https://github.com/HotlineHenok/Hangman/blob/master/sketches%20design/IMG_20151113_231742.jpg?raw=true)
+![diagram](https://github.com/HotlineHenok/Hangman/blob/master/sketches%20design/IMG_20151122_221214.jpg?raw=true)
