@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".Gameplay"
+    android:weightSum="1"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFFFF"
+        android:gravity="center"
+        android:paddingTop="15dp" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="0dp"
+            android:paddingTop="0dp"
+            android:id="@+id/gallows"
+            android:src="@drawable/android_hangman_gallows" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="108dp"
+            android:paddingTop="23dp"
+            android:id="@+id/head"
+            android:src="@drawable/android_hangman_head" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="120dp"
+            android:paddingTop="53dp"
+            android:id="@+id/body"
+            android:src="@drawable/android_hangman_body" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="100dp"
+            android:paddingTop="60dp"
+            android:id="@+id/arm1"
+            android:src="@drawable/android_hangman_arm1" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="120dp"
+            android:paddingTop="60dp"
+            android:id="@+id/arm2"
+            android:src="@drawable/android_hangman_arm2" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="101dp"
+            android:paddingTop="90dp"
+            android:id="@+id/leg1"
+            android:src="@drawable/android_hangman_leg1" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="121dp"
+            android:paddingTop="90dp"
+            android:id="@+id/leg2"
+            android:src="@drawable/android_hangman_leg2" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="355dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="WORD"
+            android:id="@+id/word"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/guess"
+            android:layout_below="@+id/word"
+            android:layout_alignRight="@+id/word"
+            android:layout_alignEnd="@+id/word"
+            android:layout_marginRight="35dp"
+            android:layout_marginEnd="35dp"
+            android:layout_marginTop="36dp"
+            android:layout_alignLeft="@+id/word"
+            android:layout_alignStart="@+id/word" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OK"
+            android:id="@+id/letterbutton"
+            android:layout_alignBottom="@+id/guess"
+            android:layout_alignTop="@+id/guess"
+            android:layout_toRightOf="@+id/guess"
+            android:layout_toEndOf="@+id/guess"
+            android:clickable="true"
+            android:nestedScrollingEnabled="false"
+            android:onClick="checkLetter" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Instructions"
+            android:id="@+id/instructbutton"
+            android:layout_below="@+id/guess"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Settings"
+            android:id="@+id/settbutton"
+            android:layout_below="@+id/instructbutton"
+            android:layout_alignRight="@+id/instructbutton"
+            android:layout_alignEnd="@+id/instructbutton"
+            android:layout_alignLeft="@+id/instructbutton"
+            android:layout_alignStart="@+id/instructbutton" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Highscores"
+            android:id="@+id/highbutton"
+            android:layout_below="@+id/settbutton"
+            android:layout_alignLeft="@+id/settbutton"
+            android:layout_alignStart="@+id/settbutton"
+            android:layout_alignRight="@+id/settbutton"
+            android:layout_alignEnd="@+id/settbutton" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Restart"
+            android:id="@+id/restartbutton"
+            android:layout_below="@+id/highbutton"
+            android:layout_alignLeft="@+id/highbutton"
+            android:layout_alignStart="@+id/highbutton"
+            android:layout_alignRight="@+id/highbutton"
+            android:layout_alignEnd="@+id/highbutton" />
+    </RelativeLayout>
+
+</LinearLayout>
