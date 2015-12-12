@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Settings">
+
+    <TextView
+        android:layout_width="131dp"
+        android:layout_height="41dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="SETTINGS"
+        android:id="@+id/textView"
+        android:paddingStart="10dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/slide_turns">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Evil Mode"
+            android:id="@+id/evilText"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="58dp"
+            android:paddingStart="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Length Words"
+            android:id="@+id/lengthText"
+            android:layout_marginTop="53dp"
+            android:paddingStart="10dp"
+            android:layout_below="@+id/evilText"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Turns"
+            android:id="@+id/turnsText"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:paddingStart="10dp" />
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ON/OFF"
+            android:id="@+id/switch1"
+            android:checked="true"
+            android:layout_above="@+id/lengthText"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="30dp"
+            android:layout_marginEnd="30dp" />
+
+        <SeekBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/slide_length"
+            android:layout_alignBottom="@+id/lengthText"
+            android:layout_alignRight="@+id/switch1"
+            android:layout_alignEnd="@+id/switch1"
+            android:layout_toEndOf="@+id/settings_playbutton"
+            android:indeterminate="false"
+            android:layout_toRightOf="@+id/settings_playbutton" />
+
+        <SeekBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/slide_turns"
+            android:layout_alignBottom="@+id/turnsText"
+            android:layout_alignRight="@+id/slide_length"
+            android:layout_alignEnd="@+id/slide_length"
+            android:layout_alignLeft="@+id/slide_length"
+            android:layout_alignStart="@+id/slide_length"
+            android:indeterminate="false"
+            android:max="26" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PLAY"
+            android:id="@+id/settings_playbutton"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="89dp" />
+    </RelativeLayout>
+
+</LinearLayout>

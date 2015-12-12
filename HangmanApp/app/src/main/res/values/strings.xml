@@ -3,4 +3,6 @@
     <string name="word_1">hello</string>
     <string name="word_2">goodbye</string>
     <string name="empty"></string>
+    <string name="instructions">This is the classic game of Hangman, with an EVIL twist! Try to guess the word, one letter at a time, before you run out of turns and you HANG! If you're looking for a real challenge, turn on EVIL MODE and play against the Devil!</string>
+    <string name="header">INSTRUCTIONS</string>
 </resources>

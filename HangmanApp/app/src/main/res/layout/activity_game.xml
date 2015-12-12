@@ -4,7 +4,7 @@
     android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".Gameplay"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainGameActivity"
     android:weightSum="1"
     android:orientation="vertical">
 
@@ -120,7 +120,9 @@
             android:text="Instructions"
             android:id="@+id/instructbutton"
             android:layout_below="@+id/guess"
-            android:layout_centerHorizontal="true" />
+            android:layout_centerHorizontal="true"
+            android:onClick="onInst"
+            android:nestedScrollingEnabled="false" />
 
         <Button
             android:layout_width="wrap_content"
@@ -131,7 +133,8 @@
             android:layout_alignRight="@+id/instructbutton"
             android:layout_alignEnd="@+id/instructbutton"
             android:layout_alignLeft="@+id/instructbutton"
-            android:layout_alignStart="@+id/instructbutton" />
+            android:layout_alignStart="@+id/instructbutton"
+            android:onClick="onSettings" />
 
         <Button
             android:layout_width="wrap_content"
@@ -142,7 +145,8 @@
             android:layout_alignLeft="@+id/settbutton"
             android:layout_alignStart="@+id/settbutton"
             android:layout_alignRight="@+id/settbutton"
-            android:layout_alignEnd="@+id/settbutton" />
+            android:layout_alignEnd="@+id/settbutton"
+            android:onClick="onHigh" />
 
         <Button
             android:layout_width="wrap_content"
@@ -153,7 +157,8 @@
             android:layout_alignLeft="@+id/highbutton"
             android:layout_alignStart="@+id/highbutton"
             android:layout_alignRight="@+id/highbutton"
-            android:layout_alignEnd="@+id/highbutton" />
+            android:layout_alignEnd="@+id/highbutton"
+            android:onClick="onRestart" />
     </RelativeLayout>
 
 </LinearLayout>
